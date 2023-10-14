@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   liff
     .init({ liffId: process.env.LIFF_ID })
     .then(() => {
-      console.log(`Success! you can do something with LIFF API here. [${process.env.LIFF_ID}]`);
+      console.log(`Success! you can do something with LIFF API here: [${process.env.LIFF_ID}]`);
     })
     .catch((error) => {
       console.log(error);
