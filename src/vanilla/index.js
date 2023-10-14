@@ -18,3 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log(error);
     });
 });
+
+document.getElementById('submitButton').addEventListener('click', function () {
+  let emailValue = document.getElementById('inputField').value;
+  let resultMessage = document.getElementById('resultMessage');
+
+  // Email validation
+  let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  if (regex.test(emailValue)) {
+    resultMessage.textContent = 'LINEID と Email アドレスがスティッチされました';
+    resultMessage.style.color = 'green';
+  } else {
+    resultMessage.textContent = 'メールアドレスが正しくありません';
+    resultMessage.style.color = 'red';
+  }
+});
