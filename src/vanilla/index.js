@@ -1,4 +1,3 @@
-import { access } from 'fs';
 import './index.css';
 import liff from '@line/liff';
 
