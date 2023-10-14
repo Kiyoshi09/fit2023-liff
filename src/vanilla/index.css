@@ -6,19 +6,27 @@ body {
   /* justify-content: center; */
   padding-top: 150px;
   height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 h2 {
   margin-bottom: 20px;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 15px;
 }
 
 #inputField,
 #submitButton {
-  width: 300px;
+  width: 85%; /* slightly reduced to account for padding and to not touch the screen edges */
+  max-width: 352px; /* 414px * 0.85 */
   padding: 10px;
   border: none;
   border-radius: 5px;
   margin: 5px 0;
+  box-sizing: border-box;
 }
 
 #submitButton {
@@ -35,4 +43,7 @@ h2 {
 #resultMessage {
   margin-top: 20px;
   color: red;
+  width: 85%;
+  text-align: center;
+  box-sizing: border-box;
 }
